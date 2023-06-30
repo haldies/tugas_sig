@@ -1,0 +1,229 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.page-satu {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../asset/bis-page.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text img {
+    width: 47%;
+    border-radius: 30px;
+}
+
+.container-text {
+    width: 90%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+
+}
+
+.text-isi-informasi {
+    display: flex;
+    width: 47%;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+
+}
+
+.text-isi-informasi h1 {
+    font-size: 40px;
+}
+
+figure {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.backgroud-page {
+    width: 80%;
+}
+
+.page-satu h1 {
+    color: #ffffff;
+    font-size: 60px;
+}
+
+button {
+    background-color: #000000;
+    width: 200px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+button a {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+.container-page-tiga {
+    display: flex;
+    border-radius: 20px;
+    width: 90%;
+    box-shadow: 0px 0px 20px -9px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 20px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px -9px rgba(0, 0, 0, 0.75);
+
+}
+
+.page-tiga {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+}
+
+.page-tiga h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.tarif {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#map {
+    border-radius: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-map {
+    width: 200px;
+    background-color: #000000;
+    height: 30px;
+    border-radius: 30px;
+
+}
+
+.btn-map:hover {
+    background-color: rgb(43, 43, 43);
+}
+
+/* Untuk layar dengan lebar kurang dari atau sama dengan 600px */
+@media only screen and (max-width: 600px) {
+    .page-satu h1 {
+        font-size: 24px;
+    }
+    .container-text{
+        flex-direction: column;
+
+    }
+    .text-isi-informasi h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+    .text-isi-informasi , .text img{
+        width: 90%;  
+    }
+    .text{
+        height: 400px;
+    }
+    .nav{
+        width: 100%;
+    }
+    .container-page-tiga {
+        flex-direction: column;
+        
+
+    }
+    .page-tiga{
+        height: 800px;
+    }
+   
+  }
+  
+  /* Untuk layar dengan lebar antara 601px dan 900px */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+
+  }
+  
+  /* Untuk layar dengan lebar lebih dari atau sama dengan 901px */
+  @media only screen and (min-width: 901px) {
+    /* Kembalikan ukuran font menjadi 20px */
+  }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Peta Terminal Bus di Sukabumi</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <section class="page page-satu">
+            <div class="container">
+
+                <h1>Cari Tahu Terminal Bus
+                    <br>Kota lokasi Terdekat<br>
+                    Sukabumi dengan Website Kami.
+                </h1>
+                <button class="button" data-target="#map" >Lihat Peta</button>
+            </div>
+        </section>
+         <section id="about" class="text">
+            <div class="container-text">
+                <img src="./asset/business-woman-terminal-with-travel-bag-talking-phone.jpg" alt="" width="">
+                <div class="text-isi-informasi">
+                    <h1>About</h1>
+                    <p>Kami menyediakan informasi yang akurat dan terbaru mengenai terminal bus di Sukabumi dan
+                        sekitarnya. Anda dapat dengan mudah mencari informasi.</p>
+                </div>
+            </div>
+        </section>
+        <section class="page page-tiga">
+            <h1>PETA LOKASI TERMINAL</h1>
+            <div class="container-page-tiga">
+                <div class="tarif">
+                    <h1>Tarif Bus</h1>
+                    <label for="asal">Lokasi Asal:</label>
+                    <select id="asal">
+                        <option value="Sukabumi">Sukabumi</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Bogor">Bogor</option>
+                        <option value="Cianjur">Cianjur</option>
+                        <option value="Garut">Garut</option>
+                        <option value="Jakarta Soekarno-Hatta Airport">Jakarta Soekarno-Hatta Airport</option>
+                        <option value="Purwakarta">Purwakarta</option>
+                    </select>
+                    <label for="tujuan">Lokasi Tujuan:</label>
+                    <select id="tujuan">
+                        <option value="Sukabumi">Sukabumi</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Bogor">Bogor</option>
+                        <option value="Cianjur">Cianjur</option>
+                        <option value="Garut">Garut</option>
+                        <option value="Jakarta Soekarno-Hatta Airport">Jakarta Soekarno-Hatta Airport</option>
+                        <option value="Purwakarta">Purwakarta</option>
+                    </select>
+                    <button onclick="hitungTarif()">Hitung Tarif</button>
+                    <div id="hasil">Tarif : Rp. 0</div>
+                </div>
+                <div id="map"></div>
+            </div>
+        </section>
+       
+        <footer>
+            Copyright &copy; 2023 All Rights Reserved by Tergo
+        </footer>
+    </main>
+    <script src="./Script/hitungtarif.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="./Script/peta.js"></script>
+    <script>const buttons = document.querySelectorAll('.button');
+
+		buttons.forEach(button => {
+			button.addEventListener('click', e => {
+				e.preventDefault();
+
+				const targetId = button.getAttribute('data-target');
+				const targetElement = document.querySelector(targetId);
+
+				targetElement.scrollIntoView({behavior: 'smooth'});
+			});
+		});</script>
+
+</body>
+
+</html>
