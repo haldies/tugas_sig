@@ -83,7 +83,10 @@ ul li a:hover {
 }
 
 .text-isi-informasi h1 {
-    font-size: 40px;
+    font-size: 70px;
+}
+.text-isi-informasi p {
+    font-size: 28px;
 }
 
 figure {
@@ -198,6 +201,9 @@ footer {
     .text-isi-informasi h1 {
         text-align: center;
         font-size: 24px;
+    }
+    .text-isi-informasi p {
+        font-size: 14px;
     }
     .text-isi-informasi , .text img{
         width: 90%;  
