@@ -9,6 +9,7 @@ main {
 }
 
 nav {
+    background-color: #0a0a0a;
     display: flex;
     justify-content: end;
     position: fixed;

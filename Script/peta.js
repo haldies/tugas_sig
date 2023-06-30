@@ -123,7 +123,7 @@ if ("geolocation" in navigator) {
         });
     }, function (error) {
         console.log(error);
-        alert("Tidak dapat mendapatkan lokasi pengguna.");
+        alert("Untuk menggunakan fitur maps dengan lancar, kami membutuhkan izin akses lokasi Anda. Mohon izinkan akses lokasi pada perangkat Anda untuk menampilkan informasi yang akurat dan relevan dengan lokasi Anda.");
     });
 } else {
     alert("Geolocation tidak didukung oleh browser Anda.");
